@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+  <!-- Header -->
+  <header class="bg-gray-800 p-4">
+    <nav class="container mx-auto flex justify-between items-center">
+      <a href="#home" class="text-white text-xl font-bold">Khushi K</a>
+      <ul class="flex space-x-6 text-white">
+        <li><a href="#home" class="hover:text-green-400">Home</a></li>
+        <li><a href="#about" class="hover:text-green-400">About</a></li>
+        <li><a href="#skills" class="hover:text-green-400">Skills</a></li>
+        <li><a href="#projects" class="hover:text-green-400">Projects</a></li>
+        <li><a href="#contact" class="hover:text-green-400">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-blue-500 text-blue text-center py-16">
+    <h1 class="text-4xl font-bold mb-4">Khushi K</h1>
+    
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl5UMKpklREIr0fL1SsjTaXc8G3NbfGdGx7g&s"
+         alt="Profile"
+         class="w-40 h-40 mx-auto rounded-full border-4 border-white mb-4">
+
+    <p class="text-lg mb-6">Software Developer <br> MERN Stack | DevOps</p>
+
+    <a href="#contact"
+       class="bg-white text-green-600 px-6 py-2 rounded-full font-semibold hover:bg-gray-200">
+       Contact Me
+    </a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-white m-6 p-6 rounded shadow">
+    <h2 class="text-2xl font-bold mb-4">About Me</h2>
+
+    <h3 class="text-xl font-semibold">Full Stack Developer</h3>
+    <p class="mt-2">
+      Experienced in web development and hosting.
+      Specialized in Finance-Domain Projects.
+    </p>
+
+    <div class="mt-4 space-x-2">
+      <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">
+        Backend: NodeJS
+      </span>
+      <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm">
+        DB: Optimization
+      </span>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="bg-white m-6 p-6 rounded shadow">
+    <h2 class="text-2xl font-bold mb-4">My Skills</h2>
+
+    <div class="grid md:grid-cols-2 gap-4">
+      <div class="border p-4 rounded shadow-sm">
+        <h4 class="font-semibold text-lg">MERN Stack</h4>
+        <p>ReactJS, NodeJS, ExpressJS</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="bg-white m-6 p-6 rounded shadow">
+    <h2 class="text-2xl font-bold mb-4">My Projects</h2>
+
+    <div class="border p-4 rounded shadow-sm mb-6">
+      <h4 class="font-semibold text-lg">Gola</h4>
+      <p>Rapid way to book a cab hassle free</p>
+      <a href="https://www.gola.com/"
+         target="_blank"
+         class="text-green-600 font-semibold hover:underline">
+         View
+      </a>
+    </div>
+
+    <!-- Table -->
+    <table class="w-full border border-black text-center">
+      <thead class="bg-gray-200">
+        <tr>
+          <th class="border border-black p-2">Project</th>
+          <th class="border border-black p-2" colspan="2">Technology</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border border-black p-2">AWS for Hosting</td>
+          <td class="border border-black p-2">MERN</td>
+          <td class="border border-black p-2">Redis</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-white m-6 p-6 rounded shadow">
+    <h2 class="text-2xl font-bold mb-4">Contact Me</h2>
+
+    <form class="max-w-md">
+      <fieldset class="border p-4 rounded">
+        <legend class="font-semibold px-2">Contact Form</legend>
+
+        <div class="mb-4">
+          <label class="block mb-1">Name</label>
+          <input type="text"
+                 class="w-full border p-2 rounded"
+                 placeholder="Enter name"
+                 required>
+        </div>
+
+        <div class="mb-4">
+          <label class="block mb-1">Email</label>
+          <input type="email"
+                 class="w-full border p-2 rounded"
+                 placeholder="Enter email"
+                 required>
+        </div>
+
+        <div class="mb-4">
+          <select class="w-full border p-2 rounded">
+            <option value="fte">FTE</option>
+            <option value="consultant">Consultant</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <button type="submit"
+              class="mt-4 bg-blue-500 text-white px-6 py-2 rounded hover:bg-green-600">
+        Send
+      </button>
+    </form>
+  </section>
+
+</body>
+</html>
