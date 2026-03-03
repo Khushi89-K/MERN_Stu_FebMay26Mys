@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Metric Snapshot Strip</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-100 p-10">
+
+  <div class="bg-white p-6 m-4 rounded-xl shadow flex flex-col gap-6">
+    
+    <div class="flex justify-between items-center">
+      
+      <div class="flex gap-12">
+        
+        <div class="flex flex-col gap-1">
+          <span class="text-gray-500 text-sm tracking-wide">Active Users</span>
+          <span class="text-xl font-bold text-gray-800">12,480</span>
+          <div class="inline-flex items-center bg-green-100 text-green-700 px-3 py-0.5 rounded-full text-xs font-bold w-fit">
+            Up
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-1">
+          <span class="text-gray-500 text-sm tracking-wide">Requests / Min</span>
+          <span class="text-xl font-bold text-gray-800">1,240</span>
+          <div class="inline-flex items-center bg-blue-100 text-blue-700 px-3 py-0.5 rounded-full text-xs font-bold w-fit">
+            Stable
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-1">
+          <span class="text-gray-500 text-sm tracking-wide">Error Rate</span>
+          <span class="text-xl font-bold text-gray-800">2.1%</span>
+          <div class="inline-flex items-center bg-red-100 text-red-700 px-3 py-0.5 rounded-full text-xs font-bold w-fit">
+            Down
+          </div>
+        </div>
+
+      </div>
+
+      <button class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg shadow font-semibold transition-colors">
+        Download Report
+      </button>
+
+    </div>
+
+    <div class="bg-red-100 border-l-4 border-red-500 p-3 rounded-r">
+      <p class="text-red-700 text-sm leading-relaxed tracking-wide">
+        Scheduled maintenance tonight may briefly affect dashboard updates.
+      </p>
+    </div>
+
+  </div>
+
+</body>
+</html>
