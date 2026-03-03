@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Notification Center</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div class="bg-cream p-6 rounded-xl shadow-lg m-6 w-full ">
+
+    <div class="flex justify-between items-center mb-4">
+      <h2 class="text-xl font-bold">
+        Notification Center
+      </h2>
+
+    
+      <span class="inline-flex items-center bg-blue-400 text-black-700 text-sm px-4 py-2 rounded-full">
+        3 New
+      </span>
+    </div>
+
+
+   <div class>
+    <div class="border-l-4 border-red-600 bg-red-100 rounded-md h-25 p-2 m-2 ">
+        <h3 class="font-bold text-red-500">Action Required</h3>
+        <p class="text-red-400">our last payment attempt failed. update your payment method to avoid service interruption</p>
+        </div>
+    <div class>
+    <div class="border-l-4 border-yellow-600 bg-yellow-100 rounded-md h-25 p-2 m-2 ">
+        <h3 class="font-bold text-yellow-500">Maintenance Notice</h3>
+        <p class="text-yellow-400">The System will undergo maintenance tonight. Some features may be temporarily unavailable.</p>
+</div>
+    </div>
+        <div class="flex gap-4 mt-6">
+
+      <button class=" bg-blue-500 border border-gray-400 hover:bg-blue-500 text-black px-5 py-3 rounded-lg hover:bg-blue-500">
+        View All
+      </button>
+
+      <button class="border border-gray-400 text-gray-700 px-6 py-3 rounded-md hover:bg-blue-500 ">
+        Dismiss
+      </button>
+
+    </div>
+
+  </div>
