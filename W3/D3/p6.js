@@ -15,4 +15,4 @@ const student={
     },
 };
 console.log(student.fullname());
-console.log(student.greet())
+student.greet();
