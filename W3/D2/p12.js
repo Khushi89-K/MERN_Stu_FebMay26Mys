@@ -1,7 +1,6 @@
 // higher order function
 // 1. A function which takes another function as parameters
 // 2. A functions returns another function
-
 function createMultiplier(factor) {
     return function(number){
         return number*factor;
