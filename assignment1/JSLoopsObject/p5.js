@@ -1,5 +1,5 @@
 let wallet = {
-    owner: "Jeevan",
+    owner: "khushi",
     balance: 0,
     lastTransaction: null,
 
@@ -39,8 +39,8 @@ let wallet = {
     }
 };
 
-wallet.deposit(500);
-wallet.withdraw(200);
+wallet.deposit(800);
+wallet.withdraw(500);
 
 
 console.log(wallet);
