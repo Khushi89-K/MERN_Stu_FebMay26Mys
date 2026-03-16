@@ -2,7 +2,7 @@ const questionInput = document.getElementById("question");
 const answerInput = document.getElementById("answer");
 const addBtn = document.getElementById("addFaq");
 const container = document.getElementById("faq-container");
-const error = document.getElementById("error");
+const Error = document.getElementById("Error");
 const emptyMessage = document.getElementById("empty-message");
 
 addBtn.addEventListener("click", () => {
@@ -10,20 +10,18 @@ addBtn.addEventListener("click", () => {
 const question = questionInput.value.trim();
 const answer = answerInput.value.trim();
 
-error.textContent = "";
-
+Error.textContent = "";
 
 if(question.length < 5){
-error.textContent = "Question must be at least 5 characters";
+Error.textContent = "Question must be at least 5 characters";
 return;
 }
 
 if(answer.length < 15){
-error.textContent = "Answer must be at least 15 characters";
+Error.textContent = "Answer must be at least 15 characters";
 return;
 }
 emptyMessage.style.display = "none";
-
 
 const faq = document.createElement("div");
 faq.className = "faq";
@@ -52,13 +50,11 @@ emptyMessage.style.display = "block";
 
 });
 
-
 faq.appendChild(heading);
 faq.appendChild(para);
 faq.appendChild(delBtn);
 
 container.appendChild(faq);
-
 
 questionInput.value = "";
 answerInput.value = "";
