@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Feedback Analyzer</title>
+</head>
+
+<body>
+
+<h2>Feedback Form</h2>
+
+<label>Name</label><br>
+<input type="text" id="name"><br><br>
+
+<label>Email</label><br>
+<input type="text" id="email"><br><br>
+
+<label>Feedback Type</label><br>
+<select id="type">
+<option value="">Select</option>
+<option value="Bug">Bug</option>
+<option value="Suggestion">Suggestion</option>
+<option value="Appreciation">Appreciation</option>
+</select><br><br>
+
+<label>Feedback</label><br>
+<textarea id="feedback"></textarea><br><br>
+
+<button id="submitBtn">Submit Feedback</button>
+
+<p id="error" style="color:red;"></p>
+
+<hr>
+
+<h3>Total Feedback: <span id="count">0</span></h3>
+
+<div id="feedbackContainer"></div>
+
+<script src="./Ass2.js"></script>
+
+</body>
+</html>

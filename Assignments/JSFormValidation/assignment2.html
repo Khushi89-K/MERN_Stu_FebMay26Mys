@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Feedback analyzer</title>
+
+<style>
+body{
+font-family: Arial;
+padding:40px;
+}
+
+input, select, textarea{
+display:block;
+margin-bottom:10px;
+padding:8px;
+width:300px;
+}
+
+button{
+padding:8px 15px;
+cursor:pointer;
+}
+
+.card{
+border:1px solid #ccc;
+padding:15px;
+margin-top:15px;
+border-radius:6px;
+}
+
+.label{
+padding:3px 8px;
+font-size:12px;
+border-radius:4px;
+color:white;
+margin-left:10px;
+}
+
+.bug{ background:red; }
+.suggestion{ background:orange; }
+.appreciation{ background:green; }
+
+.delete-btn{
+margin-top:10px;
+background:black;
+color:white;
+}
+</style>
+</head>
+
+<body>
+
+<h2>Feedback Analyzer</h2>
+
+<input id="name" placeholder="Your Name">
+
+<input id="email" placeholder="Email">
+
+<select id="type">
+<option value="">Select Feedback Type</option>
+<option value="Bug">Bug</option>
+<option value="Suggestion">Suggestion</option>
+<option value="Appreciation">Appreciation</option>
+</select>
+
+<textarea id="feedback" placeholder="Write feedback"></textarea>
+
+<button id="submitBtn">Submit Feedback</button>
+
+<p id="error" style="color:red"></p>
+
+<hr>
+
+<h3>Total Feedback: <span id="count">0</span></h3>
+
+<div id="feedback-container"></div>
+
+<script src="feedback.js"></script>
+
+</body>
+</html>

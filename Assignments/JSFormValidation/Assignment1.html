@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FAQ Builders</title>
+
+<style>
+body{
+font-family: Arial;
+padding:40px;
+}
+
+input, textarea{
+display:block;
+margin-bottom:10px;
+padding:8px;
+width:300px;
+}
+
+button{
+padding:8px 15px;
+cursor:pointer;
+}
+
+.faq{
+border:1px solid #ccc;
+padding:15px;
+margin-top:10px;
+border-radius:6px;
+}
+
+.badge{
+background:#4CAF50;
+color:white;
+padding:3px 8px;
+font-size:12px;
+border-radius:4px;
+margin-left:10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>FAQ Builder</h2>
+
+<input id="question" placeholder="Enter question">
+
+<textarea id="answer" placeholder="Enter answer"></textarea>
+
+<button id="addFaq">Add FAQ</button>
+
+<p id="error" style="color:red"></p>
+
+<hr>
+
+<div id="faq-container"></div>
+
+<p id="empty-message">No FAQs available</p>
+
+<script src="faq.js"></script>
+
+</body>
+</html>
