@@ -57,7 +57,6 @@ labelText = "[Positive]";
 labelClass = "appreciation";
 }
 
-
 const card = document.createElement("div");
 card.className = "card";
 
