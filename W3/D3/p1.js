@@ -8,7 +8,6 @@ for(let i=5;i>0;i--){ // backward loop
 }
 
 // nested for loop
-
 for (let i=1; i<=3 ; i++){
     for(j=1;j<=2;j++){
         console.log(`i=${i}, j=${j}`);
