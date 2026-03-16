@@ -30,5 +30,4 @@ function tagPassword(password) {
     }
 
 }
-
 console.log(tagPassword("khushi8445667"));        
